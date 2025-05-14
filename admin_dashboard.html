@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+    }
+    header {
+      background: #1a365d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin: 0 0 10px;
+    }
+    .card button {
+      background-color: #1a365d;
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hospital Admin Dashboard</h1>
+    <p>Manage appointments, doctors, users, and messages</p>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h3>View All Appointments</h3>
+      <p>Check scheduled appointments and update status.</p>
+      <button> <a href="AdminAppointments.html">View Appointments</a></button>
+    </div>
+    <div class="card">
+      <h3>Manage Appointment Status</h3>
+      <p>Accept, reject, or mark appointments as pending.</p>
+      <button onclick="alert('Redirecting to status panel...')">Set Status</button>
+    </div>
+    <div class="card">
+      <h3>Doctors</h3>
+      <button onclick="alert('Viewing all doctors...')">View All</button>
+      <button onclick="alert('Redirecting to add doctor form...')">Add Doctor</button>
+    </div>
+    <div class="card">
+      <h3>Messages</h3>
+      <button onclick="alert('Viewing all user messages...')">View Messages</button>
+    </div>
+    <div class="card">
+      <h3>Admins</h3>
+      <button onclick="alert('Redirecting to admin form...')">Add Admin</button>
+    </div>
+  </div>
+</body>
+</html>
